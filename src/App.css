@@ -1,0 +1,141 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+form input{
+  padding: 9px;
+  border-radius: 3px;
+  border: 1px solid rgb(128 128 128 / 58%);
+  font-family: inherit;
+  color: gray;
+}
+
+
+form p{
+  margin: 0px;
+  color: rgb(0 0 0 / 74%);
+  font-size: 14px;
+  text-transform: capitalize;
+}
+
+form > div {
+  margin-bottom: 12px;
+}
+
+form button{
+  background-color: transparent;
+  border-color: rgb(0 0 0 / 30%);
+  padding: 7px 37px;
+  border-radius: 16px;
+  border-width: 1px;
+  color: gray;
+}
+
+table {     
+  font-size: 12px;
+  border-collapse: collapse; }
+
+th {     
+  font-size: 13px;
+  font-weight: normal;
+  padding: 8px;
+  background: #eff2fd;
+  border-top: 4px solid #dadada;
+  border-bottom: 1px solid #fff;
+  color: #6680b3;
+  text-align: center;
+}
+
+td {    
+  text-align: center;
+  padding: 8px;
+  background: #f2f5ff;
+  border-bottom: 1px solid #fff;
+  color: #626275;
+  border-top: 1px solid transparent;
+}
+
+tr:hover td { 
+  background: #d0dafd; 
+  color: #339; 
+}
+
+table button{
+  background-color: transparent;
+    border-color: rgb(0 0 0 / 30%);
+    padding: 5px 14px;
+    border-radius: 16px;
+    border-width: 1px;
+    color: gray;
+    font-size: 11px;
+}
+
+table button.eliminar{
+  background-color: #eccaca;
+  color: rgb(0 0 0 / 69%);
+  border-color: rgb(0 0 0 / 49%);
+}
+
+table button.editar{
+  background-color: #aabdff;
+  color: rgb(0 0 0 / 69%);
+  border-color: rgb(0 0 0 / 49%);
+}
+
+button{
+  cursor: pointer;
+}
+
+.title{
+  font-weight: 300;
+  font-size: 26px;
+}
+
+select {
+  -webkit-appearance: none;
+  appearance: none;
+  background-color: transparent;
+  border: 1px solid #80808085;
+  margin: 0;
+  font-family: inherit;
+  font-size: inherit;
+  cursor: inherit;
+  line-height: inherit;
+  outline: none;
+  padding: 2px 15px;
+}
