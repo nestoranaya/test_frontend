@@ -25,7 +25,7 @@ const GolesPartido = props => {
   };
 
   const actualizarPartido = async () => {
-    if(validaciones()){
+    if (validaciones()) {
       const res = await actualizar$(partido);
       if (res) {
         history.push("/verPartido");
@@ -42,12 +42,12 @@ const GolesPartido = props => {
     let errores = [];
     let validado = true;
 
-    if (!partido.golesVisitante) {
+    if (partido.golesVisitante.length == 0 || partido.golesVisitante < 0) {
       validado = false;
       errores.push("El campo goles visitante no puede ir vacío");
     }
 
-    if (!partido.golesLocal) {
+    if (partido.golesLocal.length == 0 || partido.golesLocal < 0) {
       validado = false;
       errores.push("El campo goles local no puede ir vacío");
     }
@@ -58,7 +58,7 @@ const GolesPartido = props => {
 
   return (
     <div>
-      <MenuComponent header/>
+      <MenuComponent header />
       <div className="goles">
         <p className="title">Registrar goles</p>
         <label>Equipo local</label>

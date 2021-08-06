@@ -1,6 +1,14 @@
 import React from 'react';
 import { BrowserRouter, Route, Redirect, Switch } from "react-router-dom";
-import { Login, Usuario, MenuComponent, VerPartido, RegistrarPartido, GolesPartido } from "../views";
+import { 
+    Login,
+    Usuario, 
+    MenuComponent, 
+    VerPartido, 
+    RegistrarPartido, 
+    GolesPartido, 
+    Equipo 
+} from "../views";
 
 function RouterComponent() {
     return (
@@ -25,6 +33,9 @@ function RouterComponent() {
                 <Route
                     path="/golesPartidos"
                     render={(props) => <GolesPartido {...props} />} />
+                <Route
+                    path="/equipo"
+                    render={(props) => <Equipo {...props} />} />
 
                 <Redirect to="/login" />
             </Switch>

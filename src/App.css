@@ -43,6 +43,7 @@ form input{
   border: 1px solid rgb(128 128 128 / 58%);
   font-family: inherit;
   color: gray;
+  background-color: rgb(255 255 255 / 87%);
 }
 
 
@@ -58,22 +59,23 @@ form > div {
 }
 
 form button{
-  background-color: transparent;
-  border-color: rgb(0 0 0 / 30%);
-  padding: 7px 37px;
-  border-radius: 16px;
-  border-width: 1px;
-  color: gray;
+  background-color: rgb(0 0 0 / 18%);
+    border-color: rgb(0 0 0 / 62%);
+    padding: 7px 37px;
+    border-radius: 16px;
+    border-width: 1px;
+    color: #b5b5b5;
 }
 
 table {     
-  font-size: 12px;
-  border-collapse: collapse; }
+  font-size: 16px;
+  font-weight: 300;
+  border-collapse: collapse;
+}
 
 th {     
-  font-size: 13px;
   font-weight: normal;
-  padding: 8px;
+  padding: 12px;
   background: #eff2fd;
   border-top: 4px solid #dadada;
   border-bottom: 1px solid #fff;
@@ -83,7 +85,7 @@ th {
 
 td {    
   text-align: center;
-  padding: 8px;
+  padding: 12px;
   background: #f2f5ff;
   border-bottom: 1px solid #fff;
   color: #626275;
@@ -129,8 +131,8 @@ button{
 select {
   -webkit-appearance: none;
   appearance: none;
-  background-color: transparent;
-  border: 1px solid #80808085;
+  background-color: #e5e8ed;
+  border: 1px solid rgb(128 128 128 / 52%);
   margin: 0;
   font-family: inherit;
   font-size: inherit;
@@ -138,4 +140,42 @@ select {
   line-height: inherit;
   outline: none;
   padding: 2px 15px;
+  border-radius: 6px;
+}
+
+
+body{
+  background-image: url(https://blog.aulaformativa.com/wp-content/uploads/2016/06/fondos-de-pantalla-para-programadores-CodeWallpaper3.jpg);
+}
+
+
+::-webkit-scrollbar {
+  width: 8px;     /* Tamaño del scroll en vertical */
+  height: 8px;    /* Tamaño del scroll en horizontal */
+  display: none;  /* Ocultar scroll */
+}
+
+
+::-webkit-scrollbar-thumb {
+  background: #ccc;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #b3b3b3;
+  box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+::-webkit-scrollbar-thumb:active {
+  background-color: #999999;
+}
+
+::-webkit-scrollbar-track {
+  background: #e1e1e1;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-track:hover,
+::-webkit-scrollbar-track:active {
+background: #d4d4d4;
 }

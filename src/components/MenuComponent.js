@@ -15,6 +15,9 @@ const MenuComponent = ({ header }) => {
                 <div className="menu">
                     <Link to="/verPartido">Ver Partido</Link>
                 </div>
+                <div className="menu">
+                    <Link to="/equipo">Equipos</Link>
+                </div>
                 <div className="menu salir">
                     <Link to="/login">Salir</Link>
                 </div>
@@ -31,6 +34,9 @@ const MenuComponent = ({ header }) => {
                 </div>
                 <div className="header">
                     <Link to="/verPartido">Ver Partido</Link>
+                </div>
+                <div className="header">
+                    <Link to="/equipo">Equipos</Link>
                 </div>
                 <div className="header salir">
                     <Link to="/login">Salir</Link>

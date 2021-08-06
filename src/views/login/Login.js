@@ -60,15 +60,13 @@ function Login() {
   }, [])
 
   return (
-    <div>
+    <div className="login-container">
       <p className="title">Bienvenido</p>
       <form>
         <div>
-          <p>Username</p>
           <input type="text" value={username} placeholder="username" onChange={(event) => setUsername(event.target.value)} />
         </div>
         <div>
-          <p>Password</p>
           <input type="password" value={password} placeholder="password" onChange={(event) => setPassword(event.target.value)} />
         </div>
         <button type="button" onClick={() => log()}>Ingresar</button>
